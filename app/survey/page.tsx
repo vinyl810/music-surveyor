@@ -3,10 +3,10 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Play, Pause, ChevronLeft, ChevronRight, X, Loader2 } from "lucide-react";
+import { Play, Pause, ChevronLeft, ChevronRight, X, Loader2, Check } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
-// ✅ JSON 가져오기 (경로 별칭 '@'를 쓰지 않는다면 상대경로로 변경하세요)
+// JSON 목데이터 분리본 import (경로는 프로젝트 구조에 맞게 조정)
 import surveyMusicJson from "@/data/surveyMusic.json";
 
 // --- 1. 데이터 타입 정의 ---
@@ -57,6 +57,24 @@ export default function SurveyPage() {
   const isFirstTrack = currentTrackIndex === 0;
   const isLastTrack = currentTrackIndex === totalTracks - 1;
   const currentResponses = surveyResponses[currentTrack.id] || {};
+
+  // ✅ 유효성: 트랙별 완료 여부
+  const isTrackComplete = (track: Track): boolean => {
+    const resp = surveyResponses[track.id] || {};
+    return track.questions.every((q) => {
+      const v = resp[q.id];
+      if (q.type === "likert") {
+        return typeof v === "number" && Number.isFinite(v);
+      }
+      if (q.type === "text") {
+        return typeof v === "string" && v.trim().length > 0;
+      }
+      return false;
+    });
+  };
+
+  // ✅ 유효성: 전체 완료 여부
+  const isAllComplete = surveyMusic.every((t) => isTrackComplete(t));
 
   // --- 5.5 첫 커버 사전 프리로드 ---
   useEffect(() => {
@@ -114,6 +132,16 @@ export default function SurveyPage() {
   const handleNextTrack = () => {
     stopAudio();
     if (isLastTrack) {
+      // ✅ 마지막 단계: 전체 완료 검사
+      if (!isAllComplete) {
+        const firstIncompleteIndex = surveyMusic.findIndex((t) => !isTrackComplete(t));
+        alert("모든 음악에 대한 설문을 완료해야 제출할 수 있습니다.\n미완료 트랙으로 이동합니다.");
+        if (firstIncompleteIndex !== -1) {
+          setCurrentTrackIndex(firstIncompleteIndex);
+          setIsModalOpen(true); // 미완료 트랙의 설문 모달 자동 열기
+        }
+        return;
+      }
       handleSubmitSurvey();
     } else {
       setCurrentTrackIndex((prev) => prev + 1);
@@ -262,13 +290,33 @@ export default function SurveyPage() {
         <ChevronLeft className="w-7 h-7" />
       </button>
 
+      {/* ✅ 마지막 설문에서는 '제출하기'로 명확히 보이도록 + 미완료면 비활성화 */}
       <button
         onClick={handleNextTrack}
-        disabled={isSubmitting}
-        className="absolute right-2 top-1/2 -translate-y-1/2 p-2 glass-button rounded-full disabled:opacity-30 disabled:cursor-not-allowed"
-        aria-label={isLastTrack ? "설문 제출" : "다음 음악"}
+        disabled={isSubmitting || (isLastTrack && !isAllComplete)}
+        className={`
+          absolute right-2 top-1/2 -translate-y-1/2 
+          flex items-center gap-2 rounded-full font-bold
+          transition-all duration-200
+          ${isLastTrack 
+            ? `px-5 py-2.5 ${isAllComplete ? "bg-green-600/90 hover:bg-green-500 text-white shadow-lg" : "bg-gray-500/60 text-white"}`
+            : "p-2 glass-button"
+          }
+          disabled:opacity-30 disabled:cursor-not-allowed
+        `}
+        aria-label={isLastTrack ? (isAllComplete ? "설문 제출" : "미완료 설문 존재") : "다음 음악"}
+        title={isLastTrack && !isAllComplete ? "모든 음악 설문을 완료해야 제출할 수 있습니다." : undefined}
       >
-        {isSubmitting ? <Loader2 className="w-7 h-7 animate-spin" /> : <ChevronRight className="w-7 h-7" />}
+        {isSubmitting ? (
+          <Loader2 className={isLastTrack ? "w-5 h-5 animate-spin" : "w-7 h-7 animate-spin"} />
+        ) : isLastTrack ? (
+          <>
+            <span className="text-base leading-none">{isAllComplete ? "제출하기" : "미완료"}</span>
+            <Check className="w-5 h-5" />
+          </>
+        ) : (
+          <ChevronRight className="w-7 h-7" />
+        )}
       </button>
 
       {/* E. 설문 모달 */}
