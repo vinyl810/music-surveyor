@@ -1,26 +1,81 @@
-@import "tailwindcss";
+/* Tailwind를 프로젝트에서 계속 쓰고 있다면 아래 3줄은 남겨도 되고, 제거해도 됩니다. */
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* 기본 HTML 및 Body 설정 */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* 텍스트 색 (text-gray-100 대체) */
+  color: #f3f4f6;
+
+  /* 배경 그라데이션 */
+  background-image: linear-gradient(
+    160deg,
+    #020024 0%,
+    #090979 35%,
+    #001a2d 100%
+  );
+  background-color: #090979;
+
+  overflow: hidden; /* 전체 페이지 스크롤 방지 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism 컴포넌트 */
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1); /* shadow-lg 유사값 */
+}
+
+.glass-button {
+  background-color: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1); /* shadow-md 유사값 */
+  transition: all 200ms ease;
+}
+
+.glass-button:hover {
+  background-color: rgba(255, 255, 255, 0.10); /* hover:bg-white/10 */
+}
+
+.glass-button:active {
+  transform: scale(0.95); /* active:scale-95 */
+}
+
+.glass-button:disabled {
+  opacity: 0.5;              /* disabled:opacity-50 */
+  cursor: not-allowed;       /* disabled:cursor-not-allowed */
+}
+
+/* 커스텀 스크롤바 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
