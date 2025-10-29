@@ -1,62 +1,210 @@
 [
   {
     "id": 1,
-    "title": "Sunset Voyage",
-    "artist": "Synthwave Dreams",
-    "coverUrl": "/images/cover1.jpg",
-    "audioUrl": "/audio/music1.mp3",
+    "title": "title1",
+    "artist": "artist1",
+    "coverUrl": "/images/01.png",
+    "audioUrl": "/audio/01.mp3",
     "questions": [
-      {
-        "id": "q1_1",
-        "text": "이 음악은 '편안한' 느낌을 주나요?",
-        "type": "likert",
-        "options": ["1 (전혀)", "2", "3", "4", "5 (매우)"]
-      },
-      {
-        "id": "q1_2",
-        "text": "이 음악에서 어떤 이미지가 연상되나요?",
-        "type": "text"
-      }
+      { "id": "q1_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q1_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q1_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q1_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
     ]
   },
   {
     "id": 2,
-    "title": "Urban Pulse",
-    "artist": "Groove Masters",
-    "coverUrl": "/images/cover2.jpg",
-    "audioUrl": "/audio/music2.mp3",
+    "title": "title2",
+    "artist": "artist2",
+    "coverUrl": "/images/02.png",
+    "audioUrl": "/audio/02.mp3",
     "questions": [
-      {
-        "id": "q2_1",
-        "text": "이 음악은 '경쾌한' 느낌을 주나요?",
-        "type": "likert",
-        "options": ["1 (전혀)", "2", "3", "4", "5 (매우)"]
-      },
-      {
-        "id": "q2_2",
-        "text": "이 음악이 어울리는 장소는 어디인가요?",
-        "type": "text"
-      }
+      { "id": "q2_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q2_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q2_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q2_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
     ]
   },
   {
     "id": 3,
-    "title": "Lost in Echoes",
-    "artist": "Ambient Fields",
-    "coverUrl": "/images/cover3.jpg",
-    "audioUrl": "/audio/music3.mp3",
+    "title": "title3",
+    "artist": "artist3",
+    "coverUrl": "/images/03.png",
+    "audioUrl": "/audio/03.mp3",
     "questions": [
-      {
-        "id": "q3_1",
-        "text": "이 음악은 '신비로운' 느낌을 주나요?",
-        "type": "likert",
-        "options": ["1 (전혀)", "2", "3", "4", "5 (매우)"]
-      },
-      {
-        "id": "q3_2",
-        "text": "이 음악을 들을 때 어떤 감정이 드나요?",
-        "type": "text"
-      }
+      { "id": "q3_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q3_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q3_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q3_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "title4",
+    "artist": "artist4",
+    "coverUrl": "/images/04.png",
+    "audioUrl": "/audio/04.mp3",
+    "questions": [
+      { "id": "q4_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q4_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q4_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q4_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "title5",
+    "artist": "artist5",
+    "coverUrl": "/images/05.png",
+    "audioUrl": "/audio/05.mp3",
+    "questions": [
+      { "id": "q5_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q5_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q5_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q5_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "title6",
+    "artist": "artist6",
+    "coverUrl": "/images/06.png",
+    "audioUrl": "/audio/06.mp3",
+    "questions": [
+      { "id": "q6_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q6_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q6_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q6_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "title7",
+    "artist": "artist7",
+    "coverUrl": "/images/07.png",
+    "audioUrl": "/audio/07.mp3",
+    "questions": [
+      { "id": "q7_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q7_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q7_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q7_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "title8",
+    "artist": "artist8",
+    "coverUrl": "/images/08.png",
+    "audioUrl": "/audio/08.mp3",
+    "questions": [
+      { "id": "q8_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q8_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q8_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q8_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "title9",
+    "artist": "artist9",
+    "coverUrl": "/images/09.png",
+    "audioUrl": "/audio/09.mp3",
+    "questions": [
+      { "id": "q9_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q9_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q9_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q9_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "title10",
+    "artist": "artist10",
+    "coverUrl": "/images/10.png",
+    "audioUrl": "/audio/10.mp3",
+    "questions": [
+      { "id": "q10_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q10_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q10_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q10_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "title11",
+    "artist": "artist11",
+    "coverUrl": "/images/11.png",
+    "audioUrl": "/audio/11.mp3",
+    "questions": [
+      { "id": "q11_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q11_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q11_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q11_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "title12",
+    "artist": "artist12",
+    "coverUrl": "/images/12.png",
+    "audioUrl": "/audio/12.mp3",
+    "questions": [
+      { "id": "q12_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q12_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q12_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q12_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "title13",
+    "artist": "artist13",
+    "coverUrl": "/images/13.png",
+    "audioUrl": "/audio/13.mp3",
+    "questions": [
+      { "id": "q13_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q13_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q13_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q13_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "title14",
+    "artist": "artist14",
+    "coverUrl": "/images/14.png",
+    "audioUrl": "/audio/14.mp3",
+    "questions": [
+      { "id": "q14_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q14_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q14_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q14_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "title15",
+    "artist": "artist15",
+    "coverUrl": "/images/15.png",
+    "audioUrl": "/audio/15.mp3",
+    "questions": [
+      { "id": "q15_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q15_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q15_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q15_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
+    ]
+  },
+    {
+    "id": 16,
+    "title": "title16",
+    "artist": "artist16",
+    "coverUrl": "/images/16.png",
+    "audioUrl": "/audio/16.mp3",
+    "questions": [
+      { "id": "q16_1", "text": "The emotion conveyed by this music is 'positive'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q16_2", "text": "The emotion conveyed by this music is 'energetic'. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q16_3", "text": "This music was enjoyable to listen to. Do you agree?", "type": "likert", "options": ["1","2","3","4","5","6","7"] },
+      { "id": "q16_4", "text": "Do you like this music?", "type": "likert", "options": ["1","2","3","4","5","6","7"] }
     ]
   }
 ]
