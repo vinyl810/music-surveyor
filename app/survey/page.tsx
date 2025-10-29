@@ -63,12 +63,8 @@ export default function SurveyPage() {
     const resp = surveyResponses[track.id] || {};
     return track.questions.every((q) => {
       const v = resp[q.id];
-      if (q.type === "likert") {
-        return typeof v === "number" && Number.isFinite(v);
-      }
-      if (q.type === "text") {
-        return typeof v === "string" && v.trim().length > 0;
-      }
+      if (q.type === "likert") return typeof v === "number" && Number.isFinite(v);
+      if (q.type === "text") return typeof v === "string" && v.trim().length > 0;
       return false;
     });
   };
@@ -132,13 +128,12 @@ export default function SurveyPage() {
   const handleNextTrack = () => {
     stopAudio();
     if (isLastTrack) {
-      // ✅ 마지막 단계: 전체 완료 검사
       if (!isAllComplete) {
         const firstIncompleteIndex = surveyMusic.findIndex((t) => !isTrackComplete(t));
         alert("모든 음악에 대한 설문을 완료해야 제출할 수 있습니다.\n미완료 트랙으로 이동합니다.");
         if (firstIncompleteIndex !== -1) {
           setCurrentTrackIndex(firstIncompleteIndex);
-          setIsModalOpen(true); // 미완료 트랙의 설문 모달 자동 열기
+          setIsModalOpen(true);
         }
         return;
       }
@@ -226,18 +221,20 @@ export default function SurveyPage() {
 
       {/* B. 음악 플레이어 */}
       <div className="flex-grow flex flex-col items-center justify-center p-6 space-y-6 overflow-y-auto">
-        {/* 앨범 커버 */}
-        <div className="relative w-64 h-64 md:w-72 md:h-72 glass-card shadow-2xl overflow-hidden">
-          <Image
-            key={currentTrack.id}
-            src={currentTrack.coverUrl}
-            alt={`${currentTrack.title} 앨범 커버`}
-            fill
-            sizes="(max-width: 768px) 256px, (max-width: 1200px) 288px, 288px"
-            priority={currentTrackIndex === 0}
-            loading={currentTrackIndex === 0 ? "eager" : "lazy"}
-            style={{ objectFit: "cover" }}
-          />
+        {/* ✅ 정사각형 앨범 커버 */}
+        <div className="w-56 sm:w-64 md:w-72">
+          <div className="relative w-full pb-[100%] glass-card shadow-2xl overflow-hidden">
+            <Image
+              key={currentTrack.id}
+              src={currentTrack.coverUrl}
+              alt={`${currentTrack.title} 앨범 커버`}
+              fill
+              sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, (max-width: 1200px) 288px, 288px"
+              priority={currentTrackIndex === 0}
+              loading={currentTrackIndex === 0 ? "eager" : "lazy"}
+              className="object-cover"
+            />
+          </div>
         </div>
 
         {/* 트랙 정보 */}
@@ -290,7 +287,7 @@ export default function SurveyPage() {
         <ChevronLeft className="w-7 h-7" />
       </button>
 
-      {/* ✅ 마지막 설문에서는 '제출하기'로 명확히 보이도록 + 미완료면 비활성화 */}
+      {/* ✅ 마지막 설문에서는 '제출하기'로 명확히 보이도록 */}
       <button
         onClick={handleNextTrack}
         disabled={isSubmitting || (isLastTrack && !isAllComplete)}
