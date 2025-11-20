@@ -71,18 +71,16 @@ export default function MusicPlayer({
   const progressPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
 
   return (
-    <div className="relative w-full max-w-[350px] lg:max-w-[450px]">
-      {/* Phone Model Background */}
+    <div className="w-full max-w-[350px] lg:max-w-[350px]" style={{ maxHeight: "75vh" }}>
       <div className="relative w-full" style={{ aspectRatio: "490 / 1008" }}>
+        {/* Phone Model Background */}
         <Image
           src="/phone_model.png"
           alt="Music Player"
           fill
           sizes="(max-width: 1024px) 350px, 450px"
-          priority
           className="object-contain"
         />
-      </div>
 
       {/* Hidden Audio Element */}
       <audio
@@ -221,6 +219,7 @@ export default function MusicPlayer({
           <Play className="w-full h-full text-white" fill="white" />
         )}
       </button>
+      </div>
     </div>
   );
 }

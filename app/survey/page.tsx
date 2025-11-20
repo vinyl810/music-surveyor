@@ -167,18 +167,18 @@ export default function SurveyPage() {
   return (
     <div className="flex flex-col lg:flex-row w-full min-h-screen lg:h-screen bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900">
       {/* Left Side (Desktop) / Top (Mobile): Music Player */}
-      <div className="flex-shrink-0 flex items-center justify-center p-4 lg:p-8 lg:w-[45%] lg:max-w-[600px] lg:h-screen">
+      <div className="flex-shrink-0 flex items-center justify-center p-4 lg:px-8 lg:pt-6 lg:pb-4 lg:justify-center lg:items-start lg:w-[45%] lg:max-w-[600px]">
         <MusicPlayer
-          track={currentTrack}
-          isPlaying={isPlaying}
-          currentTime={currentTime}
-          duration={duration}
-          onPlayPause={handlePlayPause}
-          onTimeUpdate={handleTimeUpdate}
-          onLoadedMetadata={handleLoadedMetadata}
-          onEnded={handleAudioEnded}
-          onSeek={handleSeek}
-        />
+            track={currentTrack}
+            isPlaying={isPlaying}
+            currentTime={currentTime}
+            duration={duration}
+            onPlayPause={handlePlayPause}
+            onTimeUpdate={handleTimeUpdate}
+            onLoadedMetadata={handleLoadedMetadata}
+            onEnded={handleAudioEnded}
+            onSeek={handleSeek}
+          />
       </div>
 
       {/* Right Side (Desktop) / Bottom (Mobile): Survey Panel */}
