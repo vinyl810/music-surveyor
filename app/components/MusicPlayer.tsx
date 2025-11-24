@@ -8,7 +8,7 @@ interface Track {
   id: number;
   title: string;
   artist: string;
-  coverUrl: string;
+  coverUrl: string | null;
   audioUrl: string;
 }
 
@@ -100,7 +100,7 @@ export default function MusicPlayer({
 
       {/* Album Cover Overlay */}
       <div
-        className="absolute overflow-hidden rounded-lg"
+        className="absolute overflow-hidden rounded-lg bg-gray-800"
         style={{
           top: "12.2%",
           left: "9.8%",
@@ -108,14 +108,23 @@ export default function MusicPlayer({
           height: "39.1%",
         }}
       >
-        <Image
-          src={track.coverUrl}
-          alt={`${track.title} cover`}
-          fill
-          sizes="(max-width: 1024px) 280px, 320px"
-          className="object-cover"
-          loading="eager"
-        />
+        {track.coverUrl ? (
+          <Image
+            src={track.coverUrl}
+            alt={`${track.title} cover`}
+            fill
+            sizes="(max-width: 1024px) 280px, 320px"
+            className="object-cover"
+            loading="eager"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-gray-500">
+            <div className="text-center">
+              <div className="text-4xl mb-2">🎵</div>
+              <div className="text-xs">No Album Art</div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Track Title Overlay */}
