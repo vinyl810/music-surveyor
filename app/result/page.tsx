@@ -28,16 +28,16 @@ export default function ResultPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <div className="text-xl">Loading results...</div>
+      <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+        <div className="text-xl text-gray-200">Loading results...</div>
       </div>
     );
   }
 
   if (submissions.length === 0) {
     return (
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <div className="text-xl text-gray-600">No submissions found</div>
+      <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+        <div className="text-xl text-gray-400">No submissions found</div>
       </div>
     );
   }
@@ -55,19 +55,19 @@ export default function ResultPage() {
   const questionIds = Array.from(allQuestionIds).sort();
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
+    <div className="min-h-screen bg-gray-900 p-4">
       <div className="max-w-[95vw] mx-auto">
         {/* Header */}
-        <div className="bg-white rounded-lg shadow-md p-6 mb-4">
-          <h1 className="text-2xl font-bold mb-4">Survey Results</h1>
+        <div className="bg-gray-800 rounded-lg shadow-md p-6 mb-4">
+          <h1 className="text-2xl font-bold mb-4 text-white">Survey Results</h1>
 
           {/* Submission Selector */}
           <div className="flex items-center gap-4">
-            <label className="font-medium">Select Submission:</label>
+            <label className="font-medium text-gray-200">Select Submission:</label>
             <select
               value={selectedSubmission}
               onChange={(e) => setSelectedSubmission(Number(e.target.value))}
-              className="border border-gray-300 rounded px-3 py-2 min-w-[300px]"
+              className="bg-gray-700 border border-gray-600 rounded px-3 py-2 min-w-[300px] text-gray-200"
             >
               {submissions.map((sub, idx) => (
                 <option key={idx} value={idx}>
@@ -75,23 +75,23 @@ export default function ResultPage() {
                 </option>
               ))}
             </select>
-            <div className="text-sm text-gray-600">
+            <div className="text-sm text-gray-400">
               Total: {submissions.length} submission{submissions.length > 1 ? 's' : ''}
             </div>
           </div>
         </div>
 
         {/* Data Grid */}
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
-                <tr className="bg-gray-800 text-white">
-                  <th className="border border-gray-300 px-4 py-2 sticky left-0 bg-gray-800 z-10">
+                <tr className="bg-gray-700 text-white">
+                  <th className="border border-gray-600 px-4 py-2 sticky left-0 bg-gray-700 z-10">
                     Track ID
                   </th>
                   {questionIds.map((qId) => (
-                    <th key={qId} className="border border-gray-300 px-4 py-2 min-w-[120px]">
+                    <th key={qId} className="border border-gray-600 px-4 py-2 min-w-[120px]">
                       {qId}
                     </th>
                   ))}
@@ -101,9 +101,9 @@ export default function ResultPage() {
                 {trackIds.map((trackId, idx) => (
                   <tr
                     key={trackId}
-                    className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                    className={idx % 2 === 0 ? "bg-gray-800" : "bg-gray-700"}
                   >
-                    <td className="border border-gray-300 px-4 py-2 font-semibold sticky left-0 bg-inherit">
+                    <td className="border border-gray-600 px-4 py-2 font-semibold sticky left-0 bg-inherit text-gray-200">
                       {trackId}
                     </td>
                     {questionIds.map((qId) => {
@@ -111,7 +111,7 @@ export default function ResultPage() {
                       return (
                         <td
                           key={qId}
-                          className="border border-gray-300 px-4 py-2 text-center"
+                          className="border border-gray-600 px-4 py-2 text-center text-gray-200"
                         >
                           {value !== undefined ? value : "-"}
                         </td>
