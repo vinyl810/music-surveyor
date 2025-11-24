@@ -3,14 +3,14 @@
     "id": 1,
     "title": "Track 1",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
-    "albumEmotion": null,
-    "musicFile": "peaceful_music_05",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/peaceful_music_05.mp3",
-    "coverUrl": null,
+    "musicEmotion": "threatening",
+    "albumEmotion": "sad",
+    "musicFile": "threatening_music_06",
+    "albumFile": "sad_album_08",
+    "matchType": "partial_valence",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/threatening_music_06.mp3",
+    "coverUrl": "/images/sad_album_08.png",
     "questions": [
       {
         "id": "q1_valence",
@@ -67,6 +67,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q1_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -75,13 +89,13 @@
     "title": "Track 2",
     "artist": "Artist",
     "musicEmotion": "sad",
-    "albumEmotion": null,
-    "musicFile": "sad_music_04",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/sad_music_04.mp3",
-    "coverUrl": null,
+    "albumEmotion": "threatening",
+    "musicFile": "sad_music_08",
+    "albumFile": "threatening_album_04",
+    "matchType": "partial_valence",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/sad_music_08.mp3",
+    "coverUrl": "/images/threatening_album_04.png",
     "questions": [
       {
         "id": "q2_valence",
@@ -138,6 +152,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q2_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -146,13 +174,13 @@
     "title": "Track 3",
     "artist": "Artist",
     "musicEmotion": "joy",
-    "albumEmotion": null,
-    "musicFile": "joy_music_07",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/joy_music_07.mp3",
-    "coverUrl": null,
+    "albumEmotion": "threatening",
+    "musicFile": "joy_music_08",
+    "albumFile": "threatening_album_02",
+    "matchType": "partial_arousal",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/joy_music_08.mp3",
+    "coverUrl": "/images/threatening_album_02.png",
     "questions": [
       {
         "id": "q3_valence",
@@ -209,6 +237,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q3_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -216,14 +258,14 @@
     "id": 4,
     "title": "Track 4",
     "artist": "Artist",
-    "musicEmotion": "joy",
-    "albumEmotion": "sad",
-    "musicFile": "joy_music_03",
-    "albumFile": "sad_album_01",
-    "matchType": "incongruent",
+    "musicEmotion": "sad",
+    "albumEmotion": "threatening",
+    "musicFile": "sad_music_07",
+    "albumFile": "threatening_album_03",
+    "matchType": "partial_valence",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/joy_music_03.mp3",
-    "coverUrl": "/images/sad_album_01.png",
+    "audioUrl": "/audio/sad_music_07.mp3",
+    "coverUrl": "/images/threatening_album_03.png",
     "questions": [
       {
         "id": "q4_valence",
@@ -301,14 +343,14 @@
     "id": 5,
     "title": "Track 5",
     "artist": "Artist",
-    "musicEmotion": "joy",
-    "albumEmotion": "sad",
-    "musicFile": "joy_music_04",
-    "albumFile": "sad_album_02",
-    "matchType": "incongruent",
+    "musicEmotion": "threatening",
+    "albumEmotion": "threatening",
+    "musicFile": "threatening_music_02",
+    "albumFile": "threatening_album_08",
+    "matchType": "congruent",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/joy_music_04.mp3",
-    "coverUrl": "/images/sad_album_02.png",
+    "audioUrl": "/audio/threatening_music_02.mp3",
+    "coverUrl": "/images/threatening_album_08.png",
     "questions": [
       {
         "id": "q5_valence",
@@ -386,14 +428,14 @@
     "id": 6,
     "title": "Track 6",
     "artist": "Artist",
-    "musicEmotion": "threatening",
-    "albumEmotion": "threatening",
-    "musicFile": "threatening_music_01",
-    "albumFile": "threatening_album_07",
+    "musicEmotion": "peaceful",
+    "albumEmotion": "peaceful",
+    "musicFile": "peaceful_music_01",
+    "albumFile": "peaceful_album_05",
     "matchType": "congruent",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/threatening_music_01.mp3",
-    "coverUrl": "/images/threatening_album_07.png",
+    "audioUrl": "/audio/peaceful_music_01.mp3",
+    "coverUrl": "/images/peaceful_album_05.png",
     "questions": [
       {
         "id": "q6_valence",
@@ -471,14 +513,14 @@
     "id": 7,
     "title": "Track 7",
     "artist": "Artist",
-    "musicEmotion": "threatening",
-    "albumEmotion": null,
-    "musicFile": "threatening_music_08",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/threatening_music_08.mp3",
-    "coverUrl": null,
+    "musicEmotion": "joy",
+    "albumEmotion": "threatening",
+    "musicFile": "joy_music_07",
+    "albumFile": "threatening_album_01",
+    "matchType": "partial_arousal",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/joy_music_07.mp3",
+    "coverUrl": "/images/threatening_album_01.png",
     "questions": [
       {
         "id": "q7_valence",
@@ -535,6 +577,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q7_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -542,13 +598,13 @@
     "id": 8,
     "title": "Track 8",
     "artist": "Artist",
-    "musicEmotion": "threatening",
+    "musicEmotion": "peaceful",
     "albumEmotion": null,
-    "musicFile": "threatening_music_07",
+    "musicFile": "peaceful_music_02",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/threatening_music_07.mp3",
+    "audioUrl": "/audio/peaceful_music_02.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -613,14 +669,14 @@
     "id": 9,
     "title": "Track 9",
     "artist": "Artist",
-    "musicEmotion": "joy",
-    "albumEmotion": "joy",
-    "musicFile": "joy_music_02",
-    "albumFile": "joy_album_02",
-    "matchType": "congruent",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/joy_music_02.mp3",
-    "coverUrl": "/images/joy_album_02.png",
+    "musicEmotion": "sad",
+    "albumEmotion": null,
+    "musicFile": "sad_music_02",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/sad_music_02.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q9_valence",
@@ -677,20 +733,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q9_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -698,14 +740,14 @@
     "id": 10,
     "title": "Track 10",
     "artist": "Artist",
-    "musicEmotion": "threatening",
-    "albumEmotion": "threatening",
-    "musicFile": "threatening_music_02",
-    "albumFile": "threatening_album_08",
+    "musicEmotion": "peaceful",
+    "albumEmotion": "peaceful",
+    "musicFile": "peaceful_music_02",
+    "albumFile": "peaceful_album_06",
     "matchType": "congruent",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/threatening_music_02.mp3",
-    "coverUrl": "/images/threatening_album_08.png",
+    "audioUrl": "/audio/peaceful_music_02.mp3",
+    "coverUrl": "/images/peaceful_album_06.png",
     "questions": [
       {
         "id": "q10_valence",
@@ -785,12 +827,12 @@
     "artist": "Artist",
     "musicEmotion": "threatening",
     "albumEmotion": "peaceful",
-    "musicFile": "threatening_music_03",
-    "albumFile": "peaceful_album_07",
+    "musicFile": "threatening_music_04",
+    "albumFile": "peaceful_album_08",
     "matchType": "incongruent",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/threatening_music_03.mp3",
-    "coverUrl": "/images/peaceful_album_07.png",
+    "audioUrl": "/audio/threatening_music_04.mp3",
+    "coverUrl": "/images/peaceful_album_08.png",
     "questions": [
       {
         "id": "q11_valence",
@@ -869,13 +911,13 @@
     "title": "Track 12",
     "artist": "Artist",
     "musicEmotion": "joy",
-    "albumEmotion": null,
-    "musicFile": "joy_music_05",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/joy_music_05.mp3",
-    "coverUrl": null,
+    "albumEmotion": "joy",
+    "musicFile": "joy_music_02",
+    "albumFile": "joy_album_02",
+    "matchType": "congruent",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/joy_music_02.mp3",
+    "coverUrl": "/images/joy_album_02.png",
     "questions": [
       {
         "id": "q12_valence",
@@ -932,6 +974,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q12_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -940,13 +996,13 @@
     "title": "Track 13",
     "artist": "Artist",
     "musicEmotion": "peaceful",
-    "albumEmotion": null,
+    "albumEmotion": "threatening",
     "musicFile": "peaceful_music_04",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
+    "albumFile": "threatening_album_06",
+    "matchType": "incongruent",
+    "hasAlbumArt": true,
     "audioUrl": "/audio/peaceful_music_04.mp3",
-    "coverUrl": null,
+    "coverUrl": "/images/threatening_album_06.png",
     "questions": [
       {
         "id": "q13_valence",
@@ -1003,6 +1059,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q13_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -1010,14 +1080,14 @@
     "id": 14,
     "title": "Track 14",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
-    "albumEmotion": "peaceful",
-    "musicFile": "peaceful_music_02",
-    "albumFile": "peaceful_album_06",
-    "matchType": "congruent",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/peaceful_music_02.mp3",
-    "coverUrl": "/images/peaceful_album_06.png",
+    "musicEmotion": "joy",
+    "albumEmotion": null,
+    "musicFile": "joy_music_06",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/joy_music_06.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q14_valence",
@@ -1074,20 +1144,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q14_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -1095,14 +1151,14 @@
     "id": 15,
     "title": "Track 15",
     "artist": "Artist",
-    "musicEmotion": "joy",
-    "albumEmotion": "peaceful",
-    "musicFile": "joy_music_06",
-    "albumFile": "peaceful_album_02",
-    "matchType": "partial_valence",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/joy_music_06.mp3",
-    "coverUrl": "/images/peaceful_album_02.png",
+    "musicEmotion": "peaceful",
+    "albumEmotion": null,
+    "musicFile": "peaceful_music_07",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/peaceful_music_07.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q15_valence",
@@ -1159,20 +1215,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q15_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -1180,14 +1222,14 @@
     "id": 16,
     "title": "Track 16",
     "artist": "Artist",
-    "musicEmotion": "sad",
-    "albumEmotion": null,
-    "musicFile": "sad_music_02",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/sad_music_02.mp3",
-    "coverUrl": null,
+    "musicEmotion": "threatening",
+    "albumEmotion": "threatening",
+    "musicFile": "threatening_music_01",
+    "albumFile": "threatening_album_07",
+    "matchType": "congruent",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/threatening_music_01.mp3",
+    "coverUrl": "/images/threatening_album_07.png",
     "questions": [
       {
         "id": "q16_valence",
@@ -1244,6 +1286,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q16_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -1251,13 +1307,13 @@
     "id": 17,
     "title": "Track 17",
     "artist": "Artist",
-    "musicEmotion": "joy",
+    "musicEmotion": "sad",
     "albumEmotion": null,
-    "musicFile": "joy_music_06",
+    "musicFile": "sad_music_04",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/joy_music_06.mp3",
+    "audioUrl": "/audio/sad_music_04.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -1407,14 +1463,14 @@
     "id": 19,
     "title": "Track 19",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
-    "albumEmotion": "threatening",
-    "musicFile": "peaceful_music_03",
-    "albumFile": "threatening_album_05",
-    "matchType": "incongruent",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/peaceful_music_03.mp3",
-    "coverUrl": "/images/threatening_album_05.png",
+    "musicEmotion": "joy",
+    "albumEmotion": null,
+    "musicFile": "joy_music_07",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/joy_music_07.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q19_valence",
@@ -1471,20 +1527,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q19_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -1492,13 +1534,13 @@
     "id": 20,
     "title": "Track 20",
     "artist": "Artist",
-    "musicEmotion": "sad",
+    "musicEmotion": "peaceful",
     "albumEmotion": null,
-    "musicFile": "sad_music_05",
+    "musicFile": "peaceful_music_05",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/sad_music_05.mp3",
+    "audioUrl": "/audio/peaceful_music_05.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -1563,13 +1605,13 @@
     "id": 21,
     "title": "Track 21",
     "artist": "Artist",
-    "musicEmotion": "threatening",
+    "musicEmotion": "peaceful",
     "albumEmotion": null,
-    "musicFile": "threatening_music_03",
+    "musicFile": "peaceful_music_08",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/threatening_music_03.mp3",
+    "audioUrl": "/audio/peaceful_music_08.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -1634,14 +1676,14 @@
     "id": 22,
     "title": "Track 22",
     "artist": "Artist",
-    "musicEmotion": "sad",
-    "albumEmotion": "sad",
-    "musicFile": "sad_music_01",
-    "albumFile": "sad_album_03",
+    "musicEmotion": "joy",
+    "albumEmotion": "joy",
+    "musicFile": "joy_music_01",
+    "albumFile": "joy_album_01",
     "matchType": "congruent",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/sad_music_01.mp3",
-    "coverUrl": "/images/sad_album_03.png",
+    "audioUrl": "/audio/joy_music_01.mp3",
+    "coverUrl": "/images/joy_album_01.png",
     "questions": [
       {
         "id": "q22_valence",
@@ -1719,14 +1761,14 @@
     "id": 23,
     "title": "Track 23",
     "artist": "Artist",
-    "musicEmotion": "joy",
-    "albumEmotion": "peaceful",
-    "musicFile": "joy_music_05",
-    "albumFile": "peaceful_album_01",
-    "matchType": "partial_valence",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/joy_music_05.mp3",
-    "coverUrl": "/images/peaceful_album_01.png",
+    "musicEmotion": "peaceful",
+    "albumEmotion": null,
+    "musicFile": "peaceful_music_06",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/peaceful_music_06.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q23_valence",
@@ -1773,20 +1815,6 @@
       {
         "id": "q23_preference",
         "text": "이 음악이 마음에 든다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
-      },
-      {
-        "id": "q23_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
         "type": "likert",
         "options": [
           "1",
@@ -1876,13 +1904,13 @@
     "title": "Track 25",
     "artist": "Artist",
     "musicEmotion": "sad",
-    "albumEmotion": null,
-    "musicFile": "sad_music_01",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/sad_music_01.mp3",
-    "coverUrl": null,
+    "albumEmotion": "joy",
+    "musicFile": "sad_music_04",
+    "albumFile": "joy_album_04",
+    "matchType": "incongruent",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/sad_music_04.mp3",
+    "coverUrl": "/images/joy_album_04.png",
     "questions": [
       {
         "id": "q25_valence",
@@ -1939,6 +1967,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q25_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -1946,13 +1988,13 @@
     "id": 26,
     "title": "Track 26",
     "artist": "Artist",
-    "musicEmotion": "joy",
+    "musicEmotion": "sad",
     "albumEmotion": null,
-    "musicFile": "joy_music_02",
+    "musicFile": "sad_music_07",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/joy_music_02.mp3",
+    "audioUrl": "/audio/sad_music_07.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -2017,14 +2059,14 @@
     "id": 27,
     "title": "Track 27",
     "artist": "Artist",
-    "musicEmotion": "joy",
-    "albumEmotion": null,
-    "musicFile": "joy_music_08",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/joy_music_08.mp3",
-    "coverUrl": null,
+    "musicEmotion": "peaceful",
+    "albumEmotion": "sad",
+    "musicFile": "peaceful_music_08",
+    "albumFile": "sad_album_06",
+    "matchType": "partial_arousal",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/peaceful_music_08.mp3",
+    "coverUrl": "/images/sad_album_06.png",
     "questions": [
       {
         "id": "q27_valence",
@@ -2081,6 +2123,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q27_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -2088,14 +2144,14 @@
     "id": 28,
     "title": "Track 28",
     "artist": "Artist",
-    "musicEmotion": "threatening",
-    "albumEmotion": null,
-    "musicFile": "threatening_music_04",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/threatening_music_04.mp3",
-    "coverUrl": null,
+    "musicEmotion": "joy",
+    "albumEmotion": "peaceful",
+    "musicFile": "joy_music_05",
+    "albumFile": "peaceful_album_01",
+    "matchType": "partial_valence",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/joy_music_05.mp3",
+    "coverUrl": "/images/peaceful_album_01.png",
     "questions": [
       {
         "id": "q28_valence",
@@ -2152,6 +2208,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q28_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -2159,14 +2229,14 @@
     "id": 29,
     "title": "Track 29",
     "artist": "Artist",
-    "musicEmotion": "joy",
-    "albumEmotion": "threatening",
-    "musicFile": "joy_music_08",
-    "albumFile": "threatening_album_02",
-    "matchType": "partial_arousal",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/joy_music_08.mp3",
-    "coverUrl": "/images/threatening_album_02.png",
+    "musicEmotion": "peaceful",
+    "albumEmotion": null,
+    "musicFile": "peaceful_music_03",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/peaceful_music_03.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q29_valence",
@@ -2223,20 +2293,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q29_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -2246,11 +2302,11 @@
     "artist": "Artist",
     "musicEmotion": "threatening",
     "albumEmotion": null,
-    "musicFile": "threatening_music_06",
+    "musicFile": "threatening_music_07",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/threatening_music_06.mp3",
+    "audioUrl": "/audio/threatening_music_07.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -2315,13 +2371,13 @@
     "id": 31,
     "title": "Track 31",
     "artist": "Artist",
-    "musicEmotion": "joy",
+    "musicEmotion": "threatening",
     "albumEmotion": null,
-    "musicFile": "joy_music_04",
+    "musicFile": "threatening_music_08",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/joy_music_04.mp3",
+    "audioUrl": "/audio/threatening_music_08.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -2386,14 +2442,14 @@
     "id": 32,
     "title": "Track 32",
     "artist": "Artist",
-    "musicEmotion": "sad",
-    "albumEmotion": null,
-    "musicFile": "sad_music_08",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/sad_music_08.mp3",
-    "coverUrl": null,
+    "musicEmotion": "threatening",
+    "albumEmotion": "sad",
+    "musicFile": "threatening_music_05",
+    "albumFile": "sad_album_07",
+    "matchType": "partial_valence",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/threatening_music_05.mp3",
+    "coverUrl": "/images/sad_album_07.png",
     "questions": [
       {
         "id": "q32_valence",
@@ -2450,6 +2506,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q32_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -2457,14 +2527,14 @@
     "id": 33,
     "title": "Track 33",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
+    "musicEmotion": "sad",
     "albumEmotion": "sad",
-    "musicFile": "peaceful_music_07",
-    "albumFile": "sad_album_05",
-    "matchType": "partial_arousal",
+    "musicFile": "sad_music_02",
+    "albumFile": "sad_album_04",
+    "matchType": "congruent",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/peaceful_music_07.mp3",
-    "coverUrl": "/images/sad_album_05.png",
+    "audioUrl": "/audio/sad_music_02.mp3",
+    "coverUrl": "/images/sad_album_04.png",
     "questions": [
       {
         "id": "q33_valence",
@@ -2543,13 +2613,13 @@
     "title": "Track 34",
     "artist": "Artist",
     "musicEmotion": "threatening",
-    "albumEmotion": "sad",
-    "musicFile": "threatening_music_06",
-    "albumFile": "sad_album_08",
-    "matchType": "partial_valence",
+    "albumEmotion": "peaceful",
+    "musicFile": "threatening_music_03",
+    "albumFile": "peaceful_album_07",
+    "matchType": "incongruent",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/threatening_music_06.mp3",
-    "coverUrl": "/images/sad_album_08.png",
+    "audioUrl": "/audio/threatening_music_03.mp3",
+    "coverUrl": "/images/peaceful_album_07.png",
     "questions": [
       {
         "id": "q34_valence",
@@ -2627,14 +2697,14 @@
     "id": 35,
     "title": "Track 35",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
-    "albumEmotion": "joy",
-    "musicFile": "peaceful_music_05",
-    "albumFile": "joy_album_05",
-    "matchType": "partial_valence",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/peaceful_music_05.mp3",
-    "coverUrl": "/images/joy_album_05.png",
+    "musicEmotion": "joy",
+    "albumEmotion": null,
+    "musicFile": "joy_music_08",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/joy_music_08.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q35_valence",
@@ -2691,20 +2761,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q35_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -2713,13 +2769,13 @@
     "title": "Track 36",
     "artist": "Artist",
     "musicEmotion": "threatening",
-    "albumEmotion": "peaceful",
+    "albumEmotion": null,
     "musicFile": "threatening_music_04",
-    "albumFile": "peaceful_album_08",
-    "matchType": "incongruent",
-    "hasAlbumArt": true,
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
     "audioUrl": "/audio/threatening_music_04.mp3",
-    "coverUrl": "/images/peaceful_album_08.png",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q36_valence",
@@ -2776,20 +2832,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q36_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -2797,14 +2839,14 @@
     "id": 37,
     "title": "Track 37",
     "artist": "Artist",
-    "musicEmotion": "joy",
-    "albumEmotion": null,
-    "musicFile": "joy_music_03",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/joy_music_03.mp3",
-    "coverUrl": null,
+    "musicEmotion": "threatening",
+    "albumEmotion": "joy",
+    "musicFile": "threatening_music_08",
+    "albumFile": "joy_album_08",
+    "matchType": "partial_arousal",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/threatening_music_08.mp3",
+    "coverUrl": "/images/joy_album_08.png",
     "questions": [
       {
         "id": "q37_valence",
@@ -2861,6 +2903,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q37_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -2869,13 +2925,13 @@
     "title": "Track 38",
     "artist": "Artist",
     "musicEmotion": "sad",
-    "albumEmotion": "peaceful",
+    "albumEmotion": null,
     "musicFile": "sad_music_06",
-    "albumFile": "peaceful_album_04",
-    "matchType": "partial_arousal",
-    "hasAlbumArt": true,
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
     "audioUrl": "/audio/sad_music_06.mp3",
-    "coverUrl": "/images/peaceful_album_04.png",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q38_valence",
@@ -2932,20 +2988,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q38_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -2953,14 +2995,14 @@
     "id": 39,
     "title": "Track 39",
     "artist": "Artist",
-    "musicEmotion": "sad",
-    "albumEmotion": "joy",
-    "musicFile": "sad_music_04",
-    "albumFile": "joy_album_04",
-    "matchType": "incongruent",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/sad_music_04.mp3",
-    "coverUrl": "/images/joy_album_04.png",
+    "musicEmotion": "threatening",
+    "albumEmotion": null,
+    "musicFile": "threatening_music_01",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/threatening_music_01.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q39_valence",
@@ -3017,20 +3059,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q39_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -3038,13 +3066,13 @@
     "id": 40,
     "title": "Track 40",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
+    "musicEmotion": "threatening",
     "albumEmotion": null,
-    "musicFile": "peaceful_music_02",
+    "musicFile": "threatening_music_06",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/peaceful_music_02.mp3",
+    "audioUrl": "/audio/threatening_music_06.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -3109,13 +3137,13 @@
     "id": 41,
     "title": "Track 41",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
+    "musicEmotion": "sad",
     "albumEmotion": null,
-    "musicFile": "peaceful_music_03",
+    "musicFile": "sad_music_08",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/peaceful_music_03.mp3",
+    "audioUrl": "/audio/sad_music_08.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -3180,14 +3208,14 @@
     "id": 42,
     "title": "Track 42",
     "artist": "Artist",
-    "musicEmotion": "threatening",
-    "albumEmotion": "sad",
-    "musicFile": "threatening_music_05",
-    "albumFile": "sad_album_07",
-    "matchType": "partial_valence",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/threatening_music_05.mp3",
-    "coverUrl": "/images/sad_album_07.png",
+    "musicEmotion": "sad",
+    "albumEmotion": null,
+    "musicFile": "sad_music_05",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/sad_music_05.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q42_valence",
@@ -3244,20 +3272,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q42_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -3265,14 +3279,14 @@
     "id": 43,
     "title": "Track 43",
     "artist": "Artist",
-    "musicEmotion": "threatening",
-    "albumEmotion": "joy",
-    "musicFile": "threatening_music_08",
-    "albumFile": "joy_album_08",
-    "matchType": "partial_arousal",
+    "musicEmotion": "joy",
+    "albumEmotion": "sad",
+    "musicFile": "joy_music_03",
+    "albumFile": "sad_album_01",
+    "matchType": "incongruent",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/threatening_music_08.mp3",
-    "coverUrl": "/images/joy_album_08.png",
+    "audioUrl": "/audio/joy_music_03.mp3",
+    "coverUrl": "/images/sad_album_01.png",
     "questions": [
       {
         "id": "q43_valence",
@@ -3350,14 +3364,14 @@
     "id": 44,
     "title": "Track 44",
     "artist": "Artist",
-    "musicEmotion": "threatening",
-    "albumEmotion": null,
-    "musicFile": "threatening_music_05",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/threatening_music_05.mp3",
-    "coverUrl": null,
+    "musicEmotion": "joy",
+    "albumEmotion": "sad",
+    "musicFile": "joy_music_04",
+    "albumFile": "sad_album_02",
+    "matchType": "incongruent",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/joy_music_04.mp3",
+    "coverUrl": "/images/sad_album_02.png",
     "questions": [
       {
         "id": "q44_valence",
@@ -3414,6 +3428,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q44_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -3421,14 +3449,14 @@
     "id": 45,
     "title": "Track 45",
     "artist": "Artist",
-    "musicEmotion": "joy",
-    "albumEmotion": "joy",
-    "musicFile": "joy_music_01",
-    "albumFile": "joy_album_01",
-    "matchType": "congruent",
+    "musicEmotion": "peaceful",
+    "albumEmotion": "sad",
+    "musicFile": "peaceful_music_07",
+    "albumFile": "sad_album_05",
+    "matchType": "partial_arousal",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/joy_music_01.mp3",
-    "coverUrl": "/images/joy_album_01.png",
+    "audioUrl": "/audio/peaceful_music_07.mp3",
+    "coverUrl": "/images/sad_album_05.png",
     "questions": [
       {
         "id": "q45_valence",
@@ -3506,13 +3534,13 @@
     "id": 46,
     "title": "Track 46",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
+    "musicEmotion": "joy",
     "albumEmotion": null,
-    "musicFile": "peaceful_music_06",
+    "musicFile": "joy_music_01",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/peaceful_music_06.mp3",
+    "audioUrl": "/audio/joy_music_01.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -3577,14 +3605,14 @@
     "id": 47,
     "title": "Track 47",
     "artist": "Artist",
-    "musicEmotion": "threatening",
-    "albumEmotion": null,
-    "musicFile": "threatening_music_01",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/threatening_music_01.mp3",
-    "coverUrl": null,
+    "musicEmotion": "joy",
+    "albumEmotion": "peaceful",
+    "musicFile": "joy_music_06",
+    "albumFile": "peaceful_album_02",
+    "matchType": "partial_valence",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/joy_music_06.mp3",
+    "coverUrl": "/images/peaceful_album_02.png",
     "questions": [
       {
         "id": "q47_valence",
@@ -3641,6 +3669,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q47_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -3649,13 +3691,13 @@
     "title": "Track 48",
     "artist": "Artist",
     "musicEmotion": "peaceful",
-    "albumEmotion": "sad",
-    "musicFile": "peaceful_music_08",
-    "albumFile": "sad_album_06",
-    "matchType": "partial_arousal",
+    "albumEmotion": "joy",
+    "musicFile": "peaceful_music_05",
+    "albumFile": "joy_album_05",
+    "matchType": "partial_valence",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/peaceful_music_08.mp3",
-    "coverUrl": "/images/sad_album_06.png",
+    "audioUrl": "/audio/peaceful_music_05.mp3",
+    "coverUrl": "/images/joy_album_05.png",
     "questions": [
       {
         "id": "q48_valence",
@@ -3733,14 +3775,14 @@
     "id": 49,
     "title": "Track 49",
     "artist": "Artist",
-    "musicEmotion": "sad",
-    "albumEmotion": "sad",
-    "musicFile": "sad_music_02",
-    "albumFile": "sad_album_04",
-    "matchType": "congruent",
+    "musicEmotion": "peaceful",
+    "albumEmotion": "threatening",
+    "musicFile": "peaceful_music_03",
+    "albumFile": "threatening_album_05",
+    "matchType": "incongruent",
     "hasAlbumArt": true,
-    "audioUrl": "/audio/sad_music_02.mp3",
-    "coverUrl": "/images/sad_album_04.png",
+    "audioUrl": "/audio/peaceful_music_03.mp3",
+    "coverUrl": "/images/threatening_album_05.png",
     "questions": [
       {
         "id": "q49_valence",
@@ -3818,14 +3860,14 @@
     "id": 50,
     "title": "Track 50",
     "artist": "Artist",
-    "musicEmotion": "sad",
-    "albumEmotion": "threatening",
-    "musicFile": "sad_music_07",
-    "albumFile": "threatening_album_03",
-    "matchType": "partial_valence",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/sad_music_07.mp3",
-    "coverUrl": "/images/threatening_album_03.png",
+    "musicEmotion": "joy",
+    "albumEmotion": null,
+    "musicFile": "joy_music_04",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/joy_music_04.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q50_valence",
@@ -3882,20 +3924,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q50_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -3903,13 +3931,13 @@
     "id": 51,
     "title": "Track 51",
     "artist": "Artist",
-    "musicEmotion": "sad",
+    "musicEmotion": "threatening",
     "albumEmotion": null,
-    "musicFile": "sad_music_06",
+    "musicFile": "threatening_music_03",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/sad_music_06.mp3",
+    "audioUrl": "/audio/threatening_music_03.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -3974,14 +4002,14 @@
     "id": 52,
     "title": "Track 52",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
-    "albumEmotion": null,
-    "musicFile": "peaceful_music_08",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/peaceful_music_08.mp3",
-    "coverUrl": null,
+    "musicEmotion": "sad",
+    "albumEmotion": "sad",
+    "musicFile": "sad_music_01",
+    "albumFile": "sad_album_03",
+    "matchType": "congruent",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/sad_music_01.mp3",
+    "coverUrl": "/images/sad_album_03.png",
     "questions": [
       {
         "id": "q52_valence",
@@ -4028,6 +4056,20 @@
       {
         "id": "q52_preference",
         "text": "이 음악이 마음에 든다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
+      },
+      {
+        "id": "q52_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
         "type": "likert",
         "options": [
           "1",
@@ -4130,14 +4172,14 @@
     "id": 54,
     "title": "Track 54",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
-    "albumEmotion": null,
-    "musicFile": "peaceful_music_07",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/peaceful_music_07.mp3",
-    "coverUrl": null,
+    "musicEmotion": "threatening",
+    "albumEmotion": "joy",
+    "musicFile": "threatening_music_07",
+    "albumFile": "joy_album_07",
+    "matchType": "partial_arousal",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/threatening_music_07.mp3",
+    "coverUrl": "/images/joy_album_07.png",
     "questions": [
       {
         "id": "q54_valence",
@@ -4194,6 +4236,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q54_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -4201,14 +4257,14 @@
     "id": 55,
     "title": "Track 55",
     "artist": "Artist",
-    "musicEmotion": "joy",
-    "albumEmotion": "threatening",
-    "musicFile": "joy_music_07",
-    "albumFile": "threatening_album_01",
-    "matchType": "partial_arousal",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/joy_music_07.mp3",
-    "coverUrl": "/images/threatening_album_01.png",
+    "musicEmotion": "peaceful",
+    "albumEmotion": null,
+    "musicFile": "peaceful_music_01",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/peaceful_music_01.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q55_valence",
@@ -4265,20 +4321,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q55_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -4286,13 +4328,13 @@
     "id": 56,
     "title": "Track 56",
     "artist": "Artist",
-    "musicEmotion": "sad",
+    "musicEmotion": "joy",
     "albumEmotion": null,
-    "musicFile": "sad_music_07",
+    "musicFile": "joy_music_05",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/sad_music_07.mp3",
+    "audioUrl": "/audio/joy_music_05.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -4357,13 +4399,13 @@
     "id": 57,
     "title": "Track 57",
     "artist": "Artist",
-    "musicEmotion": "sad",
+    "musicEmotion": "peaceful",
     "albumEmotion": null,
-    "musicFile": "sad_music_03",
+    "musicFile": "peaceful_music_04",
     "albumFile": null,
     "matchType": "no_album",
     "hasAlbumArt": false,
-    "audioUrl": "/audio/sad_music_03.mp3",
+    "audioUrl": "/audio/peaceful_music_04.mp3",
     "coverUrl": null,
     "questions": [
       {
@@ -4428,14 +4470,14 @@
     "id": 58,
     "title": "Track 58",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
-    "albumEmotion": null,
-    "musicFile": "peaceful_music_01",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/peaceful_music_01.mp3",
-    "coverUrl": null,
+    "musicEmotion": "sad",
+    "albumEmotion": "peaceful",
+    "musicFile": "sad_music_06",
+    "albumFile": "peaceful_album_04",
+    "matchType": "partial_arousal",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/sad_music_06.mp3",
+    "coverUrl": "/images/peaceful_album_04.png",
     "questions": [
       {
         "id": "q58_valence",
@@ -4492,6 +4534,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q58_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -4499,14 +4555,14 @@
     "id": 59,
     "title": "Track 59",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
-    "albumEmotion": "threatening",
-    "musicFile": "peaceful_music_04",
-    "albumFile": "threatening_album_06",
-    "matchType": "incongruent",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/peaceful_music_04.mp3",
-    "coverUrl": "/images/threatening_album_06.png",
+    "musicEmotion": "sad",
+    "albumEmotion": null,
+    "musicFile": "sad_music_01",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/sad_music_01.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q59_valence",
@@ -4563,20 +4619,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q59_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -4584,14 +4626,14 @@
     "id": 60,
     "title": "Track 60",
     "artist": "Artist",
-    "musicEmotion": "threatening",
-    "albumEmotion": "joy",
-    "musicFile": "threatening_music_07",
-    "albumFile": "joy_album_07",
-    "matchType": "partial_arousal",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/threatening_music_07.mp3",
-    "coverUrl": "/images/joy_album_07.png",
+    "musicEmotion": "sad",
+    "albumEmotion": null,
+    "musicFile": "sad_music_03",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/sad_music_03.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q60_valence",
@@ -4648,20 +4690,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q60_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -4669,14 +4697,14 @@
     "id": 61,
     "title": "Track 61",
     "artist": "Artist",
-    "musicEmotion": "sad",
-    "albumEmotion": "peaceful",
-    "musicFile": "sad_music_05",
-    "albumFile": "peaceful_album_03",
-    "matchType": "partial_arousal",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/sad_music_05.mp3",
-    "coverUrl": "/images/peaceful_album_03.png",
+    "musicEmotion": "joy",
+    "albumEmotion": null,
+    "musicFile": "joy_music_03",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/joy_music_03.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q61_valence",
@@ -4733,20 +4761,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q61_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -4754,14 +4768,14 @@
     "id": 62,
     "title": "Track 62",
     "artist": "Artist",
-    "musicEmotion": "joy",
-    "albumEmotion": null,
-    "musicFile": "joy_music_01",
-    "albumFile": null,
-    "matchType": "no_album",
-    "hasAlbumArt": false,
-    "audioUrl": "/audio/joy_music_01.mp3",
-    "coverUrl": null,
+    "musicEmotion": "sad",
+    "albumEmotion": "peaceful",
+    "musicFile": "sad_music_05",
+    "albumFile": "peaceful_album_03",
+    "matchType": "partial_arousal",
+    "hasAlbumArt": true,
+    "audioUrl": "/audio/sad_music_05.mp3",
+    "coverUrl": "/images/peaceful_album_03.png",
     "questions": [
       {
         "id": "q62_valence",
@@ -4818,6 +4832,20 @@
           "6",
           "7"
         ]
+      },
+      {
+        "id": "q62_album_match",
+        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
+        "type": "likert",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
       }
     ]
   },
@@ -4825,14 +4853,14 @@
     "id": 63,
     "title": "Track 63",
     "artist": "Artist",
-    "musicEmotion": "sad",
-    "albumEmotion": "threatening",
-    "musicFile": "sad_music_08",
-    "albumFile": "threatening_album_04",
-    "matchType": "partial_valence",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/sad_music_08.mp3",
-    "coverUrl": "/images/threatening_album_04.png",
+    "musicEmotion": "joy",
+    "albumEmotion": null,
+    "musicFile": "joy_music_02",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/joy_music_02.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q63_valence",
@@ -4889,20 +4917,6 @@
           "6",
           "7"
         ]
-      },
-      {
-        "id": "q63_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
       }
     ]
   },
@@ -4910,14 +4924,14 @@
     "id": 64,
     "title": "Track 64",
     "artist": "Artist",
-    "musicEmotion": "peaceful",
-    "albumEmotion": "peaceful",
-    "musicFile": "peaceful_music_01",
-    "albumFile": "peaceful_album_05",
-    "matchType": "congruent",
-    "hasAlbumArt": true,
-    "audioUrl": "/audio/peaceful_music_01.mp3",
-    "coverUrl": "/images/peaceful_album_05.png",
+    "musicEmotion": "threatening",
+    "albumEmotion": null,
+    "musicFile": "threatening_music_05",
+    "albumFile": null,
+    "matchType": "no_album",
+    "hasAlbumArt": false,
+    "audioUrl": "/audio/threatening_music_05.mp3",
+    "coverUrl": null,
     "questions": [
       {
         "id": "q64_valence",
@@ -4964,20 +4978,6 @@
       {
         "id": "q64_preference",
         "text": "이 음악이 마음에 든다. (1-7)",
-        "type": "likert",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7"
-        ]
-      },
-      {
-        "id": "q64_album_match",
-        "text": "음악과 앨범 아트가 잘 어울린다. (1-7)",
         "type": "likert",
         "options": [
           "1",
