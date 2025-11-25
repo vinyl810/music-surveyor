@@ -40,7 +40,18 @@ export default function MusicPlayer({
   useEffect(() => {
     if (audioRef.current) {
       if (isPlaying) {
-        audioRef.current.play().catch(err => console.error("Play error:", err));
+        const playPromise = audioRef.current.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(err => {
+            console.error("Play error:", err);
+            // Retry once after a short delay
+            setTimeout(() => {
+              if (audioRef.current && isPlaying) {
+                audioRef.current.play().catch(e => console.error("Retry play error:", e));
+              }
+            }, 100);
+          });
+        }
       } else {
         audioRef.current.pause();
       }
@@ -50,9 +61,22 @@ export default function MusicPlayer({
   useEffect(() => {
     // Reset audio when track changes
     if (audioRef.current) {
+      const wasPlaying = !audioRef.current.paused;
       audioRef.current.load();
+
+      // If it was playing before, restart playback after load
+      if (wasPlaying && isPlaying) {
+        // Wait for loadedmetadata event before attempting to play
+        const handleCanPlay = () => {
+          if (audioRef.current && isPlaying) {
+            audioRef.current.play().catch(err => console.error("Auto-play after load error:", err));
+          }
+          audioRef.current?.removeEventListener('canplay', handleCanPlay);
+        };
+        audioRef.current.addEventListener('canplay', handleCanPlay);
+      }
     }
-  }, [track.audioUrl]);
+  }, [track.audioUrl, isPlaying]);
 
   const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newTime = Number(e.target.value);
